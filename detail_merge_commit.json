@@ -1,0 +1,151 @@
+{
+  "sha": "635a5964b71b33cd454116bee9b29e036c0708c5",
+  "node_id": "C_kwDOBZHfptoAKDYzNWE1OTY0YjcxYjMzY2Q0NTQxMTZiZWU5YjI5ZTAzNmMwNzA4YzU",
+  "commit": {
+    "author": {
+      "name": "José Antonio Reyes",
+      "email": "imjaroiswebdev@gmail.com",
+      "date": "2023-04-14T15:42:25Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2023-04-14T15:42:25Z"
+    },
+    "message": "Merge pull request #676 from imjaroiswebdev/sf-ticket-00556518-eo-service-not-deleted\n\nSupport for deleting remote configuration of Event Orchestration Paths",
+    "tree": {
+      "sha": "810238c50c004c88ff94ff6988cbee1bebd6dd46",
+      "url": "https://api.github.com/repos/PagerDuty/terraform-provider-pagerduty/git/trees/810238c50c004c88ff94ff6988cbee1bebd6dd46"
+    },
+    "url": "https://api.github.com/repos/PagerDuty/terraform-provider-pagerduty/git/commits/635a5964b71b33cd454116bee9b29e036c0708c5",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJkOXRhCRBK7hj4Ov3rIwAApWQIADF/fQ7RKsFTB/oP3vs2Ws3b\nxSeso5msYz25CEzhLOWz1ghtqkiMQTlTwZgZPTHL5UDbR20iJGSCYTo2dROSn4a9\ncqj172uFqF9yge4dSiDx5mCYSTR2ZHaqz3bjc/+TORYT8RgwTfw9owySIfhom1oT\n5oDwxPmPbZV3MBP94KCI1KgJx0TciJAi3XbSIoFoSGH3lvRl0IU0kJALuHPNnXe8\njVxBAG8KA9WVVSOMGJpp+ZVe//8pFvxt+9x3pDUB6pczKGTJHt4GxJT1Q6H5FPNs\nS/Bp4a/jn6EXsJZaH6ZTubykjZwhhRvG8e04qVy6YRuYn/rpX/QmTKXlxlI1Yhk=\n=nmo5\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 810238c50c004c88ff94ff6988cbee1bebd6dd46\nparent da8299abafcbfc03a531c9982915b9bfcf613167\nparent 70e9c32706bc0035dcb76889c6ad50a0174b7296\nauthor José Antonio Reyes <imjaroiswebdev@gmail.com> 1681486945 -0400\ncommitter GitHub <noreply@github.com> 1681486945 -0400\n\nMerge pull request #676 from imjaroiswebdev/sf-ticket-00556518-eo-service-not-deleted\n\nSupport for deleting remote configuration of Event Orchestration Paths"
+    }
+  },
+  "url": "https://api.github.com/repos/PagerDuty/terraform-provider-pagerduty/commits/635a5964b71b33cd454116bee9b29e036c0708c5",
+  "html_url": "https://github.com/PagerDuty/terraform-provider-pagerduty/commit/635a5964b71b33cd454116bee9b29e036c0708c5",
+  "comments_url": "https://api.github.com/repos/PagerDuty/terraform-provider-pagerduty/commits/635a5964b71b33cd454116bee9b29e036c0708c5/comments",
+  "author": {
+    "login": "imjaroiswebdev",
+    "id": 24704624,
+    "node_id": "MDQ6VXNlcjI0NzA0NjI0",
+    "avatar_url": "https://avatars.githubusercontent.com/u/24704624?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/imjaroiswebdev",
+    "html_url": "https://github.com/imjaroiswebdev",
+    "followers_url": "https://api.github.com/users/imjaroiswebdev/followers",
+    "following_url": "https://api.github.com/users/imjaroiswebdev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/imjaroiswebdev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/imjaroiswebdev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/imjaroiswebdev/subscriptions",
+    "organizations_url": "https://api.github.com/users/imjaroiswebdev/orgs",
+    "repos_url": "https://api.github.com/users/imjaroiswebdev/repos",
+    "events_url": "https://api.github.com/users/imjaroiswebdev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/imjaroiswebdev/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "da8299abafcbfc03a531c9982915b9bfcf613167",
+      "url": "https://api.github.com/repos/PagerDuty/terraform-provider-pagerduty/commits/da8299abafcbfc03a531c9982915b9bfcf613167",
+      "html_url": "https://github.com/PagerDuty/terraform-provider-pagerduty/commit/da8299abafcbfc03a531c9982915b9bfcf613167"
+    },
+    {
+      "sha": "70e9c32706bc0035dcb76889c6ad50a0174b7296",
+      "url": "https://api.github.com/repos/PagerDuty/terraform-provider-pagerduty/commits/70e9c32706bc0035dcb76889c6ad50a0174b7296",
+      "html_url": "https://github.com/PagerDuty/terraform-provider-pagerduty/commit/70e9c32706bc0035dcb76889c6ad50a0174b7296"
+    }
+  ],
+  "stats": {
+    "total": 137,
+    "additions": 129,
+    "deletions": 8
+  },
+  "files": [
+    {
+      "sha": "de93114f1b8fe53684743ed1995a05c1dd49bab8",
+      "filename": "pagerduty/event_orchestration_path_util.go",
+      "status": "modified",
+      "additions": 37,
+      "deletions": 0,
+      "changes": 37,
+      "blob_url": "https://github.com/PagerDuty/terraform-provider-pagerduty/blob/635a5964b71b33cd454116bee9b29e036c0708c5/pagerduty%2Fevent_orchestration_path_util.go",
+      "raw_url": "https://github.com/PagerDuty/terraform-provider-pagerduty/raw/635a5964b71b33cd454116bee9b29e036c0708c5/pagerduty%2Fevent_orchestration_path_util.go",
+      "contents_url": "https://api.github.com/repos/PagerDuty/terraform-provider-pagerduty/contents/pagerduty%2Fevent_orchestration_path_util.go?ref=635a5964b71b33cd454116bee9b29e036c0708c5",
+      "patch": "@@ -350,3 +350,40 @@ func convertEventOrchestrationPathWarningsToDiagnostics(warnings []*pagerduty.Ev\n \n \treturn diags\n }\n+\n+func emptyOrchestrationPathStructBuilder(pathType string) *pagerduty.EventOrchestrationPath {\n+\tcommonEmptyOrchestrationPath := func() *pagerduty.EventOrchestrationPath {\n+\t\treturn &pagerduty.EventOrchestrationPath{\n+\t\t\tCatchAll: &pagerduty.EventOrchestrationPathCatchAll{\n+\t\t\t\tActions: nil,\n+\t\t\t},\n+\t\t\tSets: []*pagerduty.EventOrchestrationPathSet{\n+\t\t\t\t{\n+\t\t\t\t\tID:    \"start\",\n+\t\t\t\t\tRules: []*pagerduty.EventOrchestrationPathRule{},\n+\t\t\t\t},\n+\t\t\t},\n+\t\t}\n+\t}\n+\trouterEmptyOrchestrationPath := func() *pagerduty.EventOrchestrationPath {\n+\t\treturn &pagerduty.EventOrchestrationPath{\n+\t\t\tCatchAll: &pagerduty.EventOrchestrationPathCatchAll{\n+\t\t\t\tActions: &pagerduty.EventOrchestrationPathRuleActions{\n+\t\t\t\t\tRouteTo: \"unrouted\",\n+\t\t\t\t},\n+\t\t\t},\n+\t\t\tSets: []*pagerduty.EventOrchestrationPathSet{\n+\t\t\t\t{\n+\t\t\t\t\tID:    \"start\",\n+\t\t\t\t\tRules: []*pagerduty.EventOrchestrationPathRule{},\n+\t\t\t\t},\n+\t\t\t},\n+\t\t}\n+\t}\n+\n+\tif pathType == \"router\" {\n+\t\treturn routerEmptyOrchestrationPath()\n+\t}\n+\n+\treturn commonEmptyOrchestrationPath()\n+}"
+    },
+    {
+      "sha": "81260fc081afb4e63ee9ae65745597088d8c718f",
+      "filename": "pagerduty/resource_pagerduty_event_orchestration_path_global.go",
+      "status": "modified",
+      "additions": 23,
+      "deletions": 2,
+      "changes": 25,
+      "blob_url": "https://github.com/PagerDuty/terraform-provider-pagerduty/blob/635a5964b71b33cd454116bee9b29e036c0708c5/pagerduty%2Fresource_pagerduty_event_orchestration_path_global.go",
+      "raw_url": "https://github.com/PagerDuty/terraform-provider-pagerduty/raw/635a5964b71b33cd454116bee9b29e036c0708c5/pagerduty%2Fresource_pagerduty_event_orchestration_path_global.go",
+      "contents_url": "https://api.github.com/repos/PagerDuty/terraform-provider-pagerduty/contents/pagerduty%2Fresource_pagerduty_event_orchestration_path_global.go?ref=635a5964b71b33cd454116bee9b29e036c0708c5",
+      "patch": "@@ -230,10 +230,31 @@ func resourcePagerDutyEventOrchestrationPathGlobalUpdate(ctx context.Context, d\n }\n \n func resourcePagerDutyEventOrchestrationPathGlobalDelete(ctx context.Context, d *schema.ResourceData, meta interface{}) diag.Diagnostics {\n-\tvar diags diag.Diagnostics\n+\tclient, err := meta.(*Config).Client()\n+\tif err != nil {\n+\t\treturn diag.FromErr(err)\n+\t}\n+\n+\t// In order to delete a Global Orchestration an empty orchestration path\n+\t// config should be sent as an update.\n+\temptyPath := emptyOrchestrationPathStructBuilder(\"global_orchestration\")\n+\torchestrationID := d.Get(\"event_orchestration\").(string)\n+\n+\tlog.Printf(\"[INFO] Deleting PagerDuty Global Event Orchestration Path: %s\", orchestrationID)\n+\n+\tretryErr := resource.RetryContext(ctx, 30*time.Second, func() *resource.RetryError {\n+\t\tif _, _, err := client.EventOrchestrationPaths.UpdateContext(ctx, orchestrationID, \"global\", emptyPath); err != nil {\n+\t\t\treturn resource.RetryableError(err)\n+\t\t}\n+\t\treturn nil\n+\t})\n+\n+\tif retryErr != nil {\n+\t\treturn diag.FromErr(retryErr)\n+\t}\n \n \td.SetId(\"\")\n-\treturn diags\n+\treturn nil\n }\n \n func resourcePagerDutyEventOrchestrationPathGlobalImport(ctx context.Context, d *schema.ResourceData, meta interface{}) ([]*schema.ResourceData, error) {"
+    },
+    {
+      "sha": "40544f3f92647c06461bd16d7a316d928e839a03",
+      "filename": "pagerduty/resource_pagerduty_event_orchestration_path_router.go",
+      "status": "modified",
+      "additions": 23,
+      "deletions": 2,
+      "changes": 25,
+      "blob_url": "https://github.com/PagerDuty/terraform-provider-pagerduty/blob/635a5964b71b33cd454116bee9b29e036c0708c5/pagerduty%2Fresource_pagerduty_event_orchestration_path_router.go",
+      "raw_url": "https://github.com/PagerDuty/terraform-provider-pagerduty/raw/635a5964b71b33cd454116bee9b29e036c0708c5/pagerduty%2Fresource_pagerduty_event_orchestration_path_router.go",
+      "contents_url": "https://api.github.com/repos/PagerDuty/terraform-provider-pagerduty/contents/pagerduty%2Fresource_pagerduty_event_orchestration_path_router.go?ref=635a5964b71b33cd454116bee9b29e036c0708c5",
+      "patch": "@@ -153,10 +153,31 @@ func resourcePagerDutyEventOrchestrationPathRouterCreate(ctx context.Context, d\n }\n \n func resourcePagerDutyEventOrchestrationPathRouterDelete(ctx context.Context, d *schema.ResourceData, meta interface{}) diag.Diagnostics {\n-\tvar diags diag.Diagnostics\n+\tclient, err := meta.(*Config).Client()\n+\tif err != nil {\n+\t\treturn diag.FromErr(err)\n+\t}\n+\n+\t// In order to delete an Orchestration Router an empty orchestration path\n+\t// config should be sent as an update.\n+\temptyPath := emptyOrchestrationPathStructBuilder(\"router\")\n+\trouterID := d.Get(\"event_orchestration\").(string)\n+\n+\tlog.Printf(\"[INFO] Deleting PagerDuty Event Orchestration Router Path: %s\", routerID)\n+\n+\tretryErr := resource.RetryContext(ctx, 30*time.Second, func() *resource.RetryError {\n+\t\tif _, _, err := client.EventOrchestrationPaths.UpdateContext(ctx, routerID, \"router\", emptyPath); err != nil {\n+\t\t\treturn resource.RetryableError(err)\n+\t\t}\n+\t\treturn nil\n+\t})\n+\n+\tif retryErr != nil {\n+\t\treturn diag.FromErr(retryErr)\n+\t}\n \n \td.SetId(\"\")\n-\treturn diags\n+\treturn nil\n }\n \n func resourcePagerDutyEventOrchestrationPathRouterUpdate(ctx context.Context, d *schema.ResourceData, meta interface{}) diag.Diagnostics {"
+    },
+    {
+      "sha": "be4bfc9f5dbf0d2b0006bc36b0c202b655b189f8",
+      "filename": "pagerduty/resource_pagerduty_event_orchestration_path_service.go",
+      "status": "modified",
+      "additions": 23,
+      "deletions": 2,
+      "changes": 25,
+      "blob_url": "https://github.com/PagerDuty/terraform-provider-pagerduty/blob/635a5964b71b33cd454116bee9b29e036c0708c5/pagerduty%2Fresource_pagerduty_event_orchestration_path_service.go",
+      "raw_url": "https://github.com/PagerDuty/terraform-provider-pagerduty/raw/635a5964b71b33cd454116bee9b29e036c0708c5/pagerduty%2Fresource_pagerduty_event_orchestration_path_service.go",
+      "contents_url": "https://api.github.com/repos/PagerDuty/terraform-provider-pagerduty/contents/pagerduty%2Fresource_pagerduty_event_orchestration_path_service.go?ref=635a5964b71b33cd454116bee9b29e036c0708c5",
+      "patch": "@@ -315,10 +315,31 @@ func needToUpdateServiceActiveStatus(d *schema.ResourceData) bool {\n }\n \n func resourcePagerDutyEventOrchestrationPathServiceDelete(ctx context.Context, d *schema.ResourceData, meta interface{}) diag.Diagnostics {\n-\tvar diags diag.Diagnostics\n+\tclient, err := meta.(*Config).Client()\n+\tif err != nil {\n+\t\treturn diag.FromErr(err)\n+\t}\n+\n+\t// In order to delete a Service Orchestration an empty orchestration path\n+\t// config should be sent as an update.\n+\temptyPath := emptyOrchestrationPathStructBuilder(\"service\")\n+\tserviceID := d.Get(\"service\").(string)\n+\n+\tlog.Printf(\"[INFO] Deleting PagerDuty Event Orchestration Service Path: %s\", serviceID)\n+\n+\tretryErr := resource.RetryContext(ctx, 30*time.Second, func() *resource.RetryError {\n+\t\tif _, _, err := client.EventOrchestrationPaths.UpdateContext(ctx, serviceID, \"service\", emptyPath); err != nil {\n+\t\t\treturn resource.RetryableError(err)\n+\t\t}\n+\t\treturn nil\n+\t})\n+\n+\tif retryErr != nil {\n+\t\treturn diag.FromErr(retryErr)\n+\t}\n \n \td.SetId(\"\")\n-\treturn diags\n+\treturn nil\n }\n \n func resourcePagerDutyEventOrchestrationPathServiceImport(ctx context.Context, d *schema.ResourceData, meta interface{}) ([]*schema.ResourceData, error) {"
+    },
+    {
+      "sha": "0c7c1065de1c9420d890d80aeebd801e9e08a088",
+      "filename": "pagerduty/resource_pagerduty_event_orchestration_path_unrouted.go",
+      "status": "modified",
+      "additions": 23,
+      "deletions": 2,
+      "changes": 25,
+      "blob_url": "https://github.com/PagerDuty/terraform-provider-pagerduty/blob/635a5964b71b33cd454116bee9b29e036c0708c5/pagerduty%2Fresource_pagerduty_event_orchestration_path_unrouted.go",
+      "raw_url": "https://github.com/PagerDuty/terraform-provider-pagerduty/raw/635a5964b71b33cd454116bee9b29e036c0708c5/pagerduty%2Fresource_pagerduty_event_orchestration_path_unrouted.go",
+      "contents_url": "https://api.github.com/repos/PagerDuty/terraform-provider-pagerduty/contents/pagerduty%2Fresource_pagerduty_event_orchestration_path_unrouted.go?ref=635a5964b71b33cd454116bee9b29e036c0708c5",
+      "patch": "@@ -203,10 +203,31 @@ func resourcePagerDutyEventOrchestrationPathUnroutedCreate(ctx context.Context,\n \n // EventOrchestrationPath cannot be deleted, use update to add / edit / remove rules and sets\n func resourcePagerDutyEventOrchestrationPathUnroutedDelete(ctx context.Context, d *schema.ResourceData, meta interface{}) diag.Diagnostics {\n-\tvar diags diag.Diagnostics\n+\tclient, err := meta.(*Config).Client()\n+\tif err != nil {\n+\t\treturn diag.FromErr(err)\n+\t}\n+\n+\t// In order to delete an Unrouted Orchestration an empty orchestration path\n+\t// config should be sent as an update.\n+\temptyPath := emptyOrchestrationPathStructBuilder(\"unrouted\")\n+\torchestrationID := d.Get(\"event_orchestration\").(string)\n+\n+\tlog.Printf(\"[INFO] Deleting PagerDuty Unrouted Event Orchestration Path: %s\", orchestrationID)\n+\n+\tretryErr := resource.RetryContext(ctx, 30*time.Second, func() *resource.RetryError {\n+\t\tif _, _, err := client.EventOrchestrationPaths.UpdateContext(ctx, orchestrationID, \"unrouted\", emptyPath); err != nil {\n+\t\t\treturn resource.RetryableError(err)\n+\t\t}\n+\t\treturn nil\n+\t})\n+\n+\tif retryErr != nil {\n+\t\treturn diag.FromErr(retryErr)\n+\t}\n \n \td.SetId(\"\")\n-\treturn diags\n+\treturn nil\n }\n \n func resourcePagerDutyEventOrchestrationPathUnroutedUpdate(ctx context.Context, d *schema.ResourceData, meta interface{}) diag.Diagnostics {"
+    }
+  ]
+}
