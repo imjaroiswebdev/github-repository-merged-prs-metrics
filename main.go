@@ -7,13 +7,15 @@ import (
 	"log"
 	"net/http"
 	"os"
+	"sort"
 	"strings"
 	"time"
 )
 
 const (
-	baseUrl = "https://api.github.com/"
-	apiPath = "repos/<username>/<repo_name>/pulls?state=closed&sort=updated&direction=desc&per_page=100"
+	baseUrl         = "https://api.github.com/"
+	apiPath         = "repos/<username>/<repo_name>/pulls?state=closed&sort=updated&direction=desc&per_page=100"
+	timeMonthLayout = "January 2006"
 )
 
 var ghtoken string
@@ -38,6 +40,25 @@ type Author struct {
 	Login string `json:"login"`
 }
 
+type SortedGroupedMergedByMonth struct {
+	Month string
+	Pulls []PullRequest
+}
+
+type ByMonth []SortedGroupedMergedByMonth
+
+func (b ByMonth) Len() int {
+	return len(b)
+}
+func (b ByMonth) Swap(i, j int) {
+	b[i], b[j] = b[j], b[i]
+}
+func (b ByMonth) Less(i, j int) bool {
+	date1, _ := time.Parse(timeMonthLayout, b[i].Month)
+	date2, _ := time.Parse(timeMonthLayout, b[j].Month)
+	return date1.Before(date2)
+}
+
 func main() {
 	// Get Github username and repository name from command line arguments
 	if len(os.Args) != 3 {
@@ -47,8 +68,58 @@ func main() {
 	userName := os.Args[1]
 	repoName := os.Args[2]
 
+	pulls := []PullRequest{}
+	// Will fetch 4 pages
+	for page := 1; page <= 5; page++ {
+		err := fetchPulls(userName, repoName, &pulls, page)
+		if err != nil {
+			fmt.Printf("Error fetching pulls %v", err)
+			os.Exit(1)
+		}
+	}
+
+	// Group pull requests by month and print
+	mergedByMonth := make(map[string][]PullRequest)
+	for _, pull := range pulls {
+		if pull.MergedAt == "" {
+			continue
+		}
+		mergedAt, err := time.Parse(time.RFC3339, pull.MergedAt)
+		if err != nil {
+			fmt.Printf("Error parsing date: %s", err.Error())
+			continue
+		}
+		if mergedAt.Before(time.Now().AddDate(-2, 0, 0)) {
+			// Only consider PRs merged in the last year
+			continue
+		}
+
+		month := mergedAt.Format(timeMonthLayout)
+		pull.MergeCommit.Author.Login = getMergeCommitAuthor(pull.MergeCommitHash)
+		mergedByMonth[month] = append(mergedByMonth[month], pull)
+	}
+
+	sortedGroupedMergedByMonth := make([]SortedGroupedMergedByMonth, 0)
+	for month, groupedPulls := range mergedByMonth {
+		sortedGroupedMergedByMonth = append(sortedGroupedMergedByMonth, SortedGroupedMergedByMonth{Month: month, Pulls: groupedPulls})
+	}
+
+	sort.Sort(ByMonth(sortedGroupedMergedByMonth))
+
+	for _, groupedMergedByMonth := range sortedGroupedMergedByMonth {
+		month := groupedMergedByMonth.Month
+		pulls := groupedMergedByMonth.Pulls
+		fmt.Printf("%s:\n", month)
+		for _, pull := range pulls {
+			fmt.Printf("%s - Author: %s, Merged by: %s\n", pull.Title, pull.User.Login, pull.MergeCommit.Author.Login)
+		}
+		fmt.Println()
+	}
+}
+
+func fetchPulls(userName, repoName string, pulls *[]PullRequest, page int) error {
 	// Construct Github API URL
-	apiUrl := fmt.Sprintf("%s%s", baseUrl, strings.ReplaceAll(apiPath, "<username>/<repo_name>", fmt.Sprintf("%s/%s", userName, repoName)))
+	apiUrl := fmt.Sprintf("%s%s&page=%s", baseUrl, strings.ReplaceAll(apiPath, "<username>/<repo_name>", fmt.Sprintf("%s/%s", userName, repoName)), fmt.Sprintf("%d", page))
 
 	// Create HTTP client with timeout
 	client := &http.Client{Timeout: 10 * time.Second}
@@ -81,45 +152,19 @@ func main() {
 	body, err := ioutil.ReadAll(resp.Body)
 	if err != nil {
 		fmt.Println("Error reading response body:", err)
-		return
+		return err
 	}
 
+	fetchedPulls := []PullRequest{}
 	// Decode API response into slice of pull requests
-	var pulls []PullRequest
-	err = json.Unmarshal(body, &pulls)
+	err = json.Unmarshal(body, &fetchedPulls)
 	if err != nil {
 		fmt.Printf("Error decoding API response: %s", err.Error())
-		os.Exit(1)
+		return err
 	}
+	*pulls = append(*pulls, fetchedPulls...)
 
-	// Group pull requests by month and print
-	mergedByMonth := make(map[string][]PullRequest)
-	for _, pull := range pulls {
-		if pull.MergedAt == "" {
-			continue
-		}
-		mergedAt, err := time.Parse(time.RFC3339, pull.MergedAt)
-		if err != nil {
-			fmt.Printf("Error parsing date: %s", err.Error())
-			continue
-		}
-		if mergedAt.Before(time.Now().AddDate(-2, 0, 0)) {
-			// Only consider PRs merged in the last year
-			continue
-		}
-
-		month := mergedAt.Format("January 2006")
-		pull.MergeCommit.Author.Login = getMergeCommitAuthor(pull.MergeCommitHash)
-		mergedByMonth[month] = append(mergedByMonth[month], pull)
-	}
-
-	for month, pulls := range mergedByMonth {
-		fmt.Printf("%s:\n", month)
-		for _, pull := range pulls {
-			fmt.Printf("%s - Author: %s, Merged by: %s\n", pull.Title, pull.User.Login, pull.MergeCommit.Author.Login)
-		}
-		fmt.Println()
-	}
+	return nil
 }
 
 func getMergeCommitAuthor(mergeCommitHash string) string {
