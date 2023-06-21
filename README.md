@@ -8,6 +8,8 @@
 
 ## How to run the program...
 
+For instance using PagerDuty's Terraform Provider [Github repository](https://github.com/PagerDuty/terraform-provider-pagerduty).
+
 ```sh
 go run main.go PagerDuty 'terraform-provider-pagerduty'
 ```
