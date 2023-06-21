@@ -1,0 +1,161 @@
+Month;Title;Author;Name (merged by);Email (merged by)
+June 2021;Set MinItems: 1 on schedule layers;drastawi;Scott McAllister ;<smcallister@pagerduty.com>
+June 2021;Update ruleset_rule.html.markdown;pdt-dridge;pdt-dridge ;<51287989+pdt-dridge@users.noreply.github.com>
+July 2021;vendor mod and test fixes;stmcallister;Scott McAllister ;<smcallister@pagerduty.com>
+July 2021;Add ServiceNow extension resource;drastawi;Scott McAllister ;<smcallister@pagerduty.com>
+July 2021;adding alert_grouping_parameters to service object;kilianw;Scott McAllister ;<smcallister@pagerduty.com>
+August 2021;add integration datasource;petetanton;Scott McAllister ;<smcallister@pagerduty.com>
+August 2021;Allow Any Business Service to be Datasource;stmcallister;Scott McAllister ;<smcallister@pagerduty.com>
+August 2021;Update documentation references;miketoth;Scott McAllister ;<smcallister@pagerduty.com>
+August 2021;don't send blank snow_password when changes are ignored;martindstone;Scott McAllister ;<smcallister@pagerduty.com>
+August 2021;Added teams to Schedule resource;stmcallister;Scott McAllister ;<smcallister@pagerduty.com>
+September 2021;Add Slack v2 Connection Resource;stmcallister;Scott McAllister ;<smcallister@pagerduty.com>
+September 2021;Set constraints on Escalation Policy num_loops;drastawi;Scott McAllister ;<smcallister@pagerduty.com>
+September 2021;Ensure general urgency rule is not set for an urgency rule of type support hours;drastawi;Scott McAllister ;<smcallister@pagerduty.com>
+September 2021;Ensure start_day_of_week is not specified for a daily schedule restriction;drastawi;Scott McAllister ;<smcallister@pagerduty.com>
+September 2021;Validate start time of week in a schedule;drastawi;Scott McAllister ;<smcallister@pagerduty.com>
+September 2021;Add regex validation to start_time_of_day;drastawi;Scott McAllister ;<smcallister@pagerduty.com>
+September 2021;integration: Validate that email integration has email;zecke;Scott McAllister ;<smcallister@pagerduty.com>
+September 2021;Minor edits to service resource's scheduled_actions block;katkasian;Scott McAllister ;<smcallister@pagerduty.com>
+October 2021;Library Updates ;stmcallister;Scott McAllister ;<smcallister@pagerduty.com>
+October 2021;Update slack_connection.html.markdown;ghost;Scott McAllister ;<smcallister@pagerduty.com>
+October 2021;Add service_region support;jbfavre;Jean-Baptiste Favre ;<jean-baptiste.favre@blablacar.com>
+October 2021;Add validation to Escalation Policy Teams: MaxItems 1;stmcallister;Scott McAllister ;<smcallister@pagerduty.com>
+October 2021;Add team membership to the docs;mandarg;Scott McAllister ;<smcallister@pagerduty.com>
+October 2021;Add Github Actions workflow to run tests;pdecat;Scott McAllister ;<smcallister@pagerduty.com>
+October 2021;Update tag.html.markdown;brenwhyte;Scott McAllister ;<smcallister@pagerduty.com>
+October 2021;Add validation on schedule layer turn rotation length;drastawi;Scott McAllister ;<smcallister@pagerduty.com>
+October 2021;Adding Tag and Tag Assignment resources. Also Tag Data Source.;stmcallister;Scott McAllister ;<smcallister@pagerduty.com>
+October 2021;Upgrade Terraform Plugin SDK to v2;pdecat;Scott McAllister ;<smcallister@pagerduty.com>
+October 2021;Fix sporadic panic when processing service dependencies;pdecat;Scott McAllister ;<smcallister@pagerduty.com>
+October 2021;Fix alert_grouping and alert_grouping_timeout conflicting with alert_grouping_parameters;pdecat;Scott McAllister ;<smcallister@pagerduty.com>
+October 2021;Delay between escalation rules has to be at least 1 min;drastawi;Scott McAllister ;<smcallister@pagerduty.com>
+October 2021;Update service.html.markdown;gbolla;Scott McAllister ;<smcallister@pagerduty.com>
+October 2021;Update ruleset_rule.html.markdown;gbolla;Scott McAllister ;<smcallister@pagerduty.com>
+October 2021;user: Validate role against known role names;zecke;Scott McAllister ;<smcallister@pagerduty.com>
+November 2021;Add pagerduty_business_service_subscriber resource;gsreynolds;Scott McAllister ;<smcallister@pagerduty.com>
+November 2021;Add webhook_subscription resource to support v3 Webhooks;stmcallister;Scott McAllister ;<smcallister@pagerduty.com>
+November 2021;Documentation fixes;ksatirli;Scott McAllister ;<smcallister@pagerduty.com>
+November 2021;update vendor docs to update inaccurate example;satyapramodh;Scott McAllister ;<smcallister@pagerduty.com>
+December 2021;Fix create race condition;eric-spence-code;Scott McAllister ;<smcallister@pagerduty.com>
+December 2021;Add optional base_url configuration;busatol;Scott McAllister ;<smcallister@pagerduty.com>
+January 2022;pagerduty_service_integration: support emails that are only known after apply;Yannic;Scott McAllister ;<smcallister@pagerduty.com>
+January 2022;Validate "duration_seconds" for a layer restriction;drastawi;Scott McAllister ;<smcallister@pagerduty.com>
+January 2022;Fix Service Event Rules Tests...and Updated the Version of TF SDK ;stmcallister;Scott McAllister ;<smcallister@pagerduty.com>
+February 2022;Increase Retry Time on Data Sources;stmcallister;Scott McAllister ;<smcallister@pagerduty.com>
+February 2022;Modify resource_pagerduty_schedule.go to send `"end": null` when a layer's end is removed;shotarok;Scott McAllister ;<smcallister@pagerduty.com>
+February 2022;Safer HTTP client initialization and usage.;dobs;Scott McAllister ;<smcallister@pagerduty.com>
+February 2022;update pd description in docs;stmcallister;Scott McAllister ;<smcallister@pagerduty.com>
+February 2022;Add type as computed attributes to service & business_service data sources + resources;jjm;Scott McAllister ;<smcallister@pagerduty.com>
+February 2022;Validate user and schedule reference in escalation policy targets;drastawi;Scott McAllister ;<smcallister@pagerduty.com>
+February 2022;Example code update for newer versions of terraform;drastawi;Scott McAllister ;<smcallister@pagerduty.com>
+February 2022;fix(docs): Update broken link to auth docs;braedongough;Scott McAllister ;<smcallister@pagerduty.com>
+March 2022;Add Email Filters to Service Integrations;stmcallister;Scott McAllister ;<smcallister@pagerduty.com>
+April 2022;Issue 463: Introduce catch_all;speedfl;Scott McAllister ;<smcallister@pagerduty.com>
+April 2022;Update Links to PD API Docs;stmcallister;Scott McAllister ;<smcallister@pagerduty.com>
+April 2022;Enforce 0 second time restriction on schedules;drastawi;Scott McAllister ;<smcallister@pagerduty.com>
+April 2022;Library Updates;Padorax;Scott McAllister ;<smcallister@pagerduty.com>
+April 2022;Embed time zone data into the provider's binary;drastawi;Scott McAllister ;<smcallister@pagerduty.com>
+April 2022;Validate time zones;drastawi;Scott McAllister ;<smcallister@pagerduty.com>
+April 2022;Phone numbers starting with a 0 are not supported;drastawi;Scott McAllister ;<smcallister@pagerduty.com>
+April 2022;Ignore error code 405 when deleting maintenance windows;sbchisholm;Scott McAllister ;<smcallister@pagerduty.com>
+May 2022;Add EO to the CHANGELOG;metavida;Marcos Wright-Kuhns ;<webmaster@wrightkuhns.com>
+May 2022;Addressing data_source_pagerduty_user paginated lists not finding users after first page;imjaroiswebdev;Scott McAllister ;<smcallister@pagerduty.com>
+May 2022;[ORCA-3467] Orchestration and path resource documentation;Pari-Dhanakoti;Pari Dhanakoti ;<pdhanakoti@pagerduty.com>
+May 2022;[ORCA-3486] Extend unrouted tests, add CustomizeDiff, clean shared functions;alexzakabluk;Alex Zakabluk ;<azakabluk@pagerduty.com>
+May 2022;[ORCA-3486] - Reuse shared Event Orchestration Path logic, add import tests;alenapan;alenapan ;<47909261+alenapan@users.noreply.github.com>
+May 2022;Addressing GOAWAY Error on a couple datasources;stmcallister;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+May 2022;Add some additional requirements for running acceptance tests;jedelson-pagerduty;Scott McAllister ;<smcallister@pagerduty.com>
+May 2022;Clean teams block;alexzakabluk;Alex Zakabluk ;<azakabluk@pagerduty.com>
+May 2022;ORCA-3486 - remove team attribute from service path;alenapan;Alex Zakabluk ;<azakabluk@pagerduty.com>
+May 2022;Flatten teams block;alexzakabluk;Alex Zakabluk ;<azakabluk@pagerduty.com>
+May 2022;Improve slack integration notes in documentation;imjaroiswebdev;Scott McAllister ;<smcallister@pagerduty.com>
+May 2022;[ORCA-3465] - Event Orchestration Service path resource;alenapan;alenapan ;<47909261+alenapan@users.noreply.github.com>
+May 2022;Include timezdata build tag into the goreleaser config;drastawi;Scott McAllister ;<smcallister@pagerduty.com>
+May 2022;Orca 3486 refactor;alexzakabluk;Alex Zakabluk ;<azakabluk@pagerduty.com>
+May 2022;make type computed and set it on read/update;Pari-Dhanakoti;Pari Dhanakoti ;<pdhanakoti@pagerduty.com>
+May 2022;Fix Terraform `user` -> `user_reference` example typo for `pagerduty_escalation_policy` resource;magnetikonline;Scott McAllister ;<smcallister@pagerduty.com>
+May 2022;Event orchestration unrouted resource;alexzakabluk;Alex Zakabluk ;<azakabluk@pagerduty.com>
+May 2022;[ORCA-3463] Orchestration Path Router Resource;Pari-Dhanakoti;Pari Dhanakoti ;<pdhanakoti@pagerduty.com>
+May 2022;A pair of minor ACC testing improvements;metavida;Scott McAllister ;<smcallister@pagerduty.com>
+May 2022;[ORCA-3475] Allow deleting event orchestration team from an orchestration;alenapan;alenapan ;<47909261+alenapan@users.noreply.github.com>
+May 2022;ORCA-3459 - Event Orchestration Resource;alenapan;Pari Dhanakoti ;<pdhanakoti@pagerduty.com>
+June 2022;Address: Unable to switch off alert grouping on a service;imjaroiswebdev;Scott McAllister ;<smcallister@pagerduty.com>
+June 2022;Wrong Extension Schema;Sysfcuk;Scott McAllister ;<smcallister@pagerduty.com>
+June 2022;Address: `pagerduty_schedule` output not showing `rendered_coverage_percentage`;imjaroiswebdev;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+June 2022;Addressing pagerduty_slack_connection unable to set "No Priority" vs "Any Priority" for priorities configuration;imjaroiswebdev;Scott McAllister ;<smcallister@pagerduty.com>
+June 2022;Address GOAWAY on three more datasources;cmrberry;Rucheli Berry ;<7971632+cmrberry@users.noreply.github.com>
+June 2022;Adding custom_headers to delivery_method in webhook_subscription resource;devops-rob;DevOps Rob ;<robert.raybarnes@gmail.com>
+June 2022;Fix permadiff in email_parser with type regex & minor docs update;bohdanborovskyi-ma;Scott McAllister ;<smcallister@pagerduty.com>
+June 2022;[ORCA-3444] Add support for Event Orchestrations;alenapan;alenapan ;<47909261+alenapan@users.noreply.github.com>
+June 2022;Event orch resource singular names;alenapan;Scott McAllister ;<smcallister@pagerduty.com>
+July 2022;Add `pagerduty_users` data source;imjaroiswebdev;Scott McAllister ;<smcallister@pagerduty.com>
+July 2022;remove `expectNonEmptyPlanFromTest` from Service test;imjaroiswebdev;Scott McAllister ;<smcallister@pagerduty.com>
+July 2022;update to go-version 1.17;stmcallister;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+July 2022;Issue #531 - Fix typos in the event orchestration router docs;alenapan;Scott McAllister ;<smcallister@pagerduty.com>
+July 2022;Fix docs for event_orchestration resources import;mrwacky42;Scott McAllister ;<smcallister@pagerduty.com>
+July 2022;add input validation and drift detection during deletion for `service_dependency`;imjaroiswebdev;Scott McAllister ;<smcallister@pagerduty.com>
+July 2022;Remove 429 check on remaining data sources;cmrberry;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+August 2022;Support for gracefully destroy `pagerduty_team_membership`;imjaroiswebdev;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+August 2022;Support for gracefully destroy `pagerduty_schedule`;imjaroiswebdev;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+August 2022;add response_play field to service;mattjones753;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+August 2022;Add support for service level auto_pause_notifications_parameters;pdecat;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+August 2022;Fixed Docs Bugs in `pagerduty_service` Ref: Issue #522;stmcallister;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+September 2022;Adds proper documentation for pagerduty_tag resource in tag_assignmen…;Coolomina;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+September 2022;Updates developer docs with more helpful setup information;johncoleman83;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+September 2022;Test rule removal rather than update for Escalation Policy Dependent Schedule;drastawi;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+September 2022;Fixing PR Links in Changelog;stmcallister;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+October 2022;resource_pagerduty_service: skip response_play with "null" value;Padorax;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+October 2022;Address: `pagerduty_service.alert_grouping_parameters.config` block parsing;imjaroiswebdev;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+November 2022;Test and handle time-based alert grouping parameters;drastawi;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+December 2022;Address: Schedules can't be deleted when they have open incidents;imjaroiswebdev;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+December 2022;implementation of incident workflow and triggers;jedelson-pagerduty;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+December 2022;Add support for Automation Actions' Action association to a Team;imjaroiswebdev;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+December 2022;Add support for pagerduty_automation_actions_action;mrdubr;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+December 2022;Add support for `pagerduty_automation_actions_runner` and `data.pagerduty_automation_actions_runner`;imjaroiswebdev;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+December 2022;Address: Unique contact method error not being captured;imjaroiswebdev;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+January 2023;feat: add pagerduty_event_orchestrations datasource;fgouteroux;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+January 2023;EF-3964 Address `team_membership` inconsistency after `create` and `update`;imjaroiswebdev;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+January 2023;[ORCA-3828] Return warnings when updating Event Orchestration Path;alenapan;alenapan ;<47909261+alenapan@users.noreply.github.com>
+January 2023;update `github.com/heimweh/go-pagerduty` to fix offset pagination;imjaroiswebdev;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+January 2023;replace ValidateValueFunc with ValidateValueDiagFunc due to deprecation;jedelson-pagerduty;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+January 2023;add team support for incident workflows;jedelson-pagerduty;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+January 2023;Add support for Automation Actions' Action association to a Service;imjaroiswebdev;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+January 2023;Add support for Automation Actions' Runner association with a Team;mrdubr;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+January 2023;Add support for the update operation on pagerduty_automation_actions_action and pagerduty_automation_actions_runner;mrdubr;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+January 2023;Add support for data.pagerduty_automation_actions_action;mrdubr;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+February 2023;Remove early access header for incident workflows;imjaroiswebdev;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+February 2023;[ORCA-3893] Add support for Global Orchestrations;alenapan;alenapan ;<47909261+alenapan@users.noreply.github.com>
+February 2023;[ORCA-3895] Add docs for the Global Orchestration resource;c-kaieong;Ka Ieong Chan ;<c-kaieong@users.noreply.github.com>
+February 2023;implementation of custom fields for terraform;jedelson-pagerduty;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+February 2023;Address: Cannot destroy schedule because of open incidents;imjaroiswebdev;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+February 2023;Address: Service integration perm diff with Generic email and empty/omitted `email_filter`;imjaroiswebdev;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+March 2023;Addressing name typo on custom fields schema field config docs and test;imjaroiswebdev;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+March 2023;[ORCA-3946] Add support for Event Orchestration Integrations;alenapan;alenapan ;<47909261+alenapan@users.noreply.github.com>
+March 2023;[ORCA-3947] Event Orchestration Integration documentation;alexzakabluk;Alex Zakabluk ;<azakabluk@pagerduty.com>
+March 2023;add improvement to EP docs `teams` attribute;imjaroiswebdev;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+March 2023;Addressing GOAWAY error on `pagerduty_service_dependency`;imjaroiswebdev;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+March 2023;RDC-1062 add node filter to process automation job;juliannagreen1;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+March 2023;Enable event orchestration active status for service;imjaroiswebdev;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+April 2023;Service response play no op update;imjaroiswebdev;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+April 2023;Add schedule's users as query param when listing open incidents associated to EP snashot;imjaroiswebdev;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+April 2023;Doc update for `data.pagerduty_vendor` regarding PagerDuty AIOps feature gate;imjaroiswebdev;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+April 2023;Handle retries and state drift clean up for Escalation Policy;imjaroiswebdev;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+April 2023;Support for deleting remote configuration of Event Orchestration Paths;imjaroiswebdev;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+April 2023;Adds license resource for user management;johncoleman83;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+April 2023;Event Orchestration Updates: Orchestration Warnings, Global Orchestrations, Orchestration Integrations;alenapan;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+April 2023;[ORCA-3999] Add EOL banner to Ruleset and Service Rules;alexzakabluk;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+April 2023;Address: Service Read lifecycle wasn't detecting drift for auto pause notif and alert grouping params;imjaroiswebdev;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+April 2023;Handle a schedule being deleted in the UI;zecke;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+April 2023;service: Compute additional fields already included in API response;adamo57;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+April 2023;Address #655 Tags are not cleaned up from State after removed externally;imjaroiswebdev;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+April 2023;Print number and error for failing contact method validation;zecke;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+April 2023;Upgrade `go-pagerduty` to support caching for `pagerduty_team_membership`;imjaroiswebdev;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+May 2023;adapt Terraform provider to use reflect simplified Custom Fields API;jedelson-pagerduty;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+May 2023;Address Schedule can't be deleted when used by EP with one layer configured;imjaroiswebdev;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+May 2023;Update go module directive go version to `1.17`;imjaroiswebdev;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+May 2023;Update handling of format errors on `pagerduty_schedule.start`;imjaroiswebdev;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+May 2023;Plan recreation of tag assignments and teams on external to Terraform deletion;imjaroiswebdev;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+May 2023;Improve `resource/pagerduty_schedule` open incidents handling on deletion;imjaroiswebdev;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+June 2023;Custom Fields - remove early access marker from incident custom fields pages;jedelson-pagerduty;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+June 2023;fix slack_connection doc;Ken-Sumi1019;José Antonio Reyes ;<imjaroiswebdev@gmail.com>

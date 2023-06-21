@@ -11,3 +11,9 @@
 ```sh
 go run main.go PagerDuty 'terraform-provider-pagerduty'
 ```
+
+### To output the result formatted as CSV file pass the flag `csv` at the end
+
+```sh
+go run main.go PagerDuty 'terraform-provider-pagerduty' csv
+```

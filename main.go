@@ -40,12 +40,12 @@ type Author struct {
 	Login string `json:"login"`
 }
 
-type SortedGroupedMergedByMonth struct {
+type SortedGroupedPullsMergedByMonth struct {
 	Month string
 	Pulls []PullRequest
 }
 
-type ByMonth []SortedGroupedMergedByMonth
+type ByMonth []SortedGroupedPullsMergedByMonth
 
 func (b ByMonth) Len() int {
 	return len(b)
@@ -61,12 +61,16 @@ func (b ByMonth) Less(i, j int) bool {
 
 func main() {
 	// Get Github username and repository name from command line arguments
-	if len(os.Args) != 3 {
+	if len(os.Args) < 3 {
 		fmt.Println("Usage: go run main.go <username> <repo_name>")
 		os.Exit(1)
 	}
 	userName := os.Args[1]
 	repoName := os.Args[2]
+	var useCSVOutputFormat string
+	if len(os.Args) > 3 {
+		useCSVOutputFormat = os.Args[3]
+	}
 
 	pulls := []PullRequest{}
 	// Will fetch 4 pages
@@ -99,22 +103,18 @@ func main() {
 		mergedByMonth[month] = append(mergedByMonth[month], pull)
 	}
 
-	sortedGroupedMergedByMonth := make([]SortedGroupedMergedByMonth, 0)
+	sortedGroupedPullsMergedByMonth := make([]SortedGroupedPullsMergedByMonth, 0)
 	for month, groupedPulls := range mergedByMonth {
-		sortedGroupedMergedByMonth = append(sortedGroupedMergedByMonth, SortedGroupedMergedByMonth{Month: month, Pulls: groupedPulls})
+		sortedGroupedPullsMergedByMonth = append(sortedGroupedPullsMergedByMonth, SortedGroupedPullsMergedByMonth{Month: month, Pulls: groupedPulls})
+	}
+	sort.Sort(ByMonth(sortedGroupedPullsMergedByMonth))
+
+	if useCSVOutputFormat != "csv" {
+		plainTextFormatter(sortedGroupedPullsMergedByMonth)
+		return
 	}
 
-	sort.Sort(ByMonth(sortedGroupedMergedByMonth))
-
-	for _, groupedMergedByMonth := range sortedGroupedMergedByMonth {
-		month := groupedMergedByMonth.Month
-		pulls := groupedMergedByMonth.Pulls
-		fmt.Printf("%s:\n", month)
-		for _, pull := range pulls {
-			fmt.Printf("%s - Author: %s, Merged by: %s\n", pull.Title, pull.User.Login, pull.MergeCommit.Author.Login)
-		}
-		fmt.Println()
-	}
+	csvFormatter(sortedGroupedPullsMergedByMonth)
 }
 
 func fetchPulls(userName, repoName string, pulls *[]PullRequest, page int) error {
@@ -211,4 +211,30 @@ func getMergeCommitAuthor(mergeCommitHash string) string {
 	}
 
 	return fmt.Sprintf("%s <%s>", commit.Commit.Author.Name, commit.Commit.Author.Email)
+}
+
+func csvFormatter(pullsByMonth []SortedGroupedPullsMergedByMonth) {
+	fmt.Println("Month;Title;Author;Name (merged by);Email (merged by)")
+	for _, groupedMergedByMonth := range pullsByMonth {
+		month := groupedMergedByMonth.Month
+		pulls := groupedMergedByMonth.Pulls
+		for _, pull := range pulls {
+			parts := strings.Split(pull.MergeCommit.Author.Login, "<")
+			mergedByName := parts[0]
+			mergedByEmail := fmt.Sprintf("<%s", parts[1])
+			fmt.Printf("%s;%s;%s;%s;%s\n", month, pull.Title, pull.User.Login, mergedByName, mergedByEmail)
+		}
+	}
+}
+
+func plainTextFormatter(pullsByMonth []SortedGroupedPullsMergedByMonth) {
+	for _, groupedMergedByMonth := range pullsByMonth {
+		month := groupedMergedByMonth.Month
+		pulls := groupedMergedByMonth.Pulls
+		fmt.Printf("%s:\n", month)
+		for _, pull := range pulls {
+			fmt.Printf("%s - Author: %s, Merged by: %s\n", pull.Title, pull.User.Login, pull.MergeCommit.Author.Login)
+		}
+		fmt.Println()
+	}
 }
