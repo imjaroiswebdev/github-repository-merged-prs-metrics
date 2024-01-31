@@ -1,47 +1,4 @@
 Month;Title;Author;Name (merged by);Email (merged by)
-June 2021;Set MinItems: 1 on schedule layers;drastawi;Scott McAllister ;<smcallister@pagerduty.com>
-June 2021;Update ruleset_rule.html.markdown;pdt-dridge;pdt-dridge ;<51287989+pdt-dridge@users.noreply.github.com>
-July 2021;vendor mod and test fixes;stmcallister;Scott McAllister ;<smcallister@pagerduty.com>
-July 2021;Add ServiceNow extension resource;drastawi;Scott McAllister ;<smcallister@pagerduty.com>
-July 2021;adding alert_grouping_parameters to service object;kilianw;Scott McAllister ;<smcallister@pagerduty.com>
-August 2021;add integration datasource;petetanton;Scott McAllister ;<smcallister@pagerduty.com>
-August 2021;Allow Any Business Service to be Datasource;stmcallister;Scott McAllister ;<smcallister@pagerduty.com>
-August 2021;Update documentation references;miketoth;Scott McAllister ;<smcallister@pagerduty.com>
-August 2021;don't send blank snow_password when changes are ignored;martindstone;Scott McAllister ;<smcallister@pagerduty.com>
-August 2021;Added teams to Schedule resource;stmcallister;Scott McAllister ;<smcallister@pagerduty.com>
-September 2021;Add Slack v2 Connection Resource;stmcallister;Scott McAllister ;<smcallister@pagerduty.com>
-September 2021;Set constraints on Escalation Policy num_loops;drastawi;Scott McAllister ;<smcallister@pagerduty.com>
-September 2021;Ensure general urgency rule is not set for an urgency rule of type support hours;drastawi;Scott McAllister ;<smcallister@pagerduty.com>
-September 2021;Ensure start_day_of_week is not specified for a daily schedule restriction;drastawi;Scott McAllister ;<smcallister@pagerduty.com>
-September 2021;Validate start time of week in a schedule;drastawi;Scott McAllister ;<smcallister@pagerduty.com>
-September 2021;Add regex validation to start_time_of_day;drastawi;Scott McAllister ;<smcallister@pagerduty.com>
-September 2021;integration: Validate that email integration has email;zecke;Scott McAllister ;<smcallister@pagerduty.com>
-September 2021;Minor edits to service resource's scheduled_actions block;katkasian;Scott McAllister ;<smcallister@pagerduty.com>
-October 2021;Library Updates ;stmcallister;Scott McAllister ;<smcallister@pagerduty.com>
-October 2021;Update slack_connection.html.markdown;ghost;Scott McAllister ;<smcallister@pagerduty.com>
-October 2021;Add service_region support;jbfavre;Jean-Baptiste Favre ;<jean-baptiste.favre@blablacar.com>
-October 2021;Add validation to Escalation Policy Teams: MaxItems 1;stmcallister;Scott McAllister ;<smcallister@pagerduty.com>
-October 2021;Add team membership to the docs;mandarg;Scott McAllister ;<smcallister@pagerduty.com>
-October 2021;Add Github Actions workflow to run tests;pdecat;Scott McAllister ;<smcallister@pagerduty.com>
-October 2021;Update tag.html.markdown;brenwhyte;Scott McAllister ;<smcallister@pagerduty.com>
-October 2021;Add validation on schedule layer turn rotation length;drastawi;Scott McAllister ;<smcallister@pagerduty.com>
-October 2021;Adding Tag and Tag Assignment resources. Also Tag Data Source.;stmcallister;Scott McAllister ;<smcallister@pagerduty.com>
-October 2021;Upgrade Terraform Plugin SDK to v2;pdecat;Scott McAllister ;<smcallister@pagerduty.com>
-October 2021;Fix sporadic panic when processing service dependencies;pdecat;Scott McAllister ;<smcallister@pagerduty.com>
-October 2021;Fix alert_grouping and alert_grouping_timeout conflicting with alert_grouping_parameters;pdecat;Scott McAllister ;<smcallister@pagerduty.com>
-October 2021;Delay between escalation rules has to be at least 1 min;drastawi;Scott McAllister ;<smcallister@pagerduty.com>
-October 2021;Update service.html.markdown;gbolla;Scott McAllister ;<smcallister@pagerduty.com>
-October 2021;Update ruleset_rule.html.markdown;gbolla;Scott McAllister ;<smcallister@pagerduty.com>
-October 2021;user: Validate role against known role names;zecke;Scott McAllister ;<smcallister@pagerduty.com>
-November 2021;Add pagerduty_business_service_subscriber resource;gsreynolds;Scott McAllister ;<smcallister@pagerduty.com>
-November 2021;Add webhook_subscription resource to support v3 Webhooks;stmcallister;Scott McAllister ;<smcallister@pagerduty.com>
-November 2021;Documentation fixes;ksatirli;Scott McAllister ;<smcallister@pagerduty.com>
-November 2021;update vendor docs to update inaccurate example;satyapramodh;Scott McAllister ;<smcallister@pagerduty.com>
-December 2021;Fix create race condition;eric-spence-code;Scott McAllister ;<smcallister@pagerduty.com>
-December 2021;Add optional base_url configuration;busatol;Scott McAllister ;<smcallister@pagerduty.com>
-January 2022;pagerduty_service_integration: support emails that are only known after apply;Yannic;Scott McAllister ;<smcallister@pagerduty.com>
-January 2022;Validate "duration_seconds" for a layer restriction;drastawi;Scott McAllister ;<smcallister@pagerduty.com>
-January 2022;Fix Service Event Rules Tests...and Updated the Version of TF SDK ;stmcallister;Scott McAllister ;<smcallister@pagerduty.com>
 February 2022;Increase Retry Time on Data Sources;stmcallister;Scott McAllister ;<smcallister@pagerduty.com>
 February 2022;Modify resource_pagerduty_schedule.go to send `"end": null` when a layer's end is removed;shotarok;Scott McAllister ;<smcallister@pagerduty.com>
 February 2022;Safer HTTP client initialization and usage.;dobs;Scott McAllister ;<smcallister@pagerduty.com>
@@ -159,3 +116,48 @@ May 2023;Plan recreation of tag assignments and teams on external to Terraform d
 May 2023;Improve `resource/pagerduty_schedule` open incidents handling on deletion;imjaroiswebdev;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
 June 2023;Custom Fields - remove early access marker from incident custom fields pages;jedelson-pagerduty;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
 June 2023;fix slack_connection doc;Ken-Sumi1019;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+July 2023;Address name format validation on Escalation Policies;imjaroiswebdev;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+July 2023;Stop retrying on Schedule deletion when open incidents are untraceable;imjaroiswebdev;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+July 2023;Address: Too long and unneeded timeouts for call retries with 400 http errors;imjaroiswebdev;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+July 2023;bump google.golang.org/grpc from 1.33.2 to 1.53.0;imjaroiswebdev;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+August 2023;[TFPROVDEV-39] Update name validation func to not accept white spaces at the end;imjaroiswebdev;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+August 2023;[TFPROVDEV-47] Address service dependency drift for external removals;imjaroiswebdev;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+August 2023;bump terraform-plugin-sdk/v2 to solve #732 ;NargiT;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+August 2023;update README to ref SECURE logs level;imjaroiswebdev;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+August 2023;[TFPROVDEV-26] Add support for `SECURE` logging level;imjaroiswebdev;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+August 2023;[TFPROVDEV-30] Address update user role failed as license is not re-computed correctly;imjaroiswebdev;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+August 2023;[TFPROVDEV-27] Avoid Concurrent calls for Service Dependencies creation;imjaroiswebdev;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+September 2023;Fix - Provider crashing on Terraform state snapshot validation;imjaroiswebdev;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+September 2023;Executes `pagerduty_custom_field` planned deprecation;imjaroiswebdev;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+September 2023;Support for PagerDuty Apps Oauth scoped token;imjaroiswebdev;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+October 2023;Specify the default country code for contact methods;drastawi;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+October 2023;[CSGI-1926] Add delays to API calls retries lacking of them on various TF Objects;imjaroiswebdev;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+October 2023;teams: add support for private teams;lomkju;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+October 2023;[TFPROVDEV-77] Update name validation logic for technical services;imjaroiswebdev;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+November 2023;[CSGI-2268 ] Deprecate `integration_key` attribute mutation for Service Integrations;imjaroiswebdev;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+November 2023;[CSGI-2172 ] Support for Intelligent Time Window to Alert Grouping Parameters;imjaroiswebdev;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+November 2023;[CSGI-2056 ] Address Service Alert Grouping parameters config permadiff;imjaroiswebdev;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+November 2023;add missing properties to incident_custom_field resource documentation;jedelson-pagerduty;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+November 2023;[CSGI-2093] Patch - Service Orchestration enable status doesn't opt in;imjaroiswebdev;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+November 2023;[CSGI-2016] Address `pagerduty_schedule` validation error on weekly restriction wihtout Start of week day;imjaroiswebdev;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+November 2023;[CSGI-2081] Update retry delay for Technical Service state read;imjaroiswebdev;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+December 2023;Bump golang.org/x/crypto from 0.11.0 to 0.17.0;dependabot[bot];José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+December 2023;add `pagerduty_team_members` data source;mdb;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+December 2023;[CSGI-2017 ] Update `pagerduty_user_contact_method` address validation logic;imjaroiswebdev;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+December 2023;[CSGI-2369 ] Add jitter correction to ratelimit headers handling;imjaroiswebdev;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+December 2023;[CSGI-2314] Add Round Robin support to `pagerduty_escalation_policy`;imjaroiswebdev;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+December 2023;More gracefully reject colonCompoundIDs that aren't compound IDs;cttttt;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+December 2023;[CSGI-2303] Hotfix - Alert grouping parameters input validation broken;imjaroiswebdev;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+December 2023;[CSGI-2263] Support rate limiting throttling;imjaroiswebdev;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+December 2023;Feat/add iw inline steps inputs support;brandonw;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+December 2023;[CSGI-2263] Revert add remaining delays for retries;imjaroiswebdev;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+January 2024;[CSGI-2429 ] Add provider and a Standards datasource using Terraform Plugin Framework;cjgajard;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+January 2024;feat: support for sourcing the provider service region from env var (take 2);ricoli;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+January 2024;[CSGI-2739 ] Address permadiff when user name has repeated whitespaces;imjaroiswebdev;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+January 2024;Address: timeout while waiting for state to become 'success' ;imjaroiswebdev;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+January 2024;Revert "Support for sourcing the provider service region from env var";imjaroiswebdev;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+January 2024;feat: support for sourcing the provider service region from an env var;ricoli;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+January 2024;[CSGI-2592] Add API Client timeouts configuration for http transport;imjaroiswebdev;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+January 2024;Allow time_window to be set for content-based grouping (issue 788);buffyg;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+January 2024;Fix attribute deprecation warning;lizduty;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
+January 2024;[CSGI-2480] Update go version to 1.20;cjgajard;José Antonio Reyes ;<imjaroiswebdev@gmail.com>
